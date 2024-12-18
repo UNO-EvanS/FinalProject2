@@ -176,7 +176,7 @@ class Ui_SignupWindow(object):
         # password_criteria_textBrowser
         self.password_criteria_textBrowser = QtWidgets.QTextBrowser(parent=self.centralwidget)
         self.password_criteria_textBrowser.setEnabled(False)
-        self.password_criteria_textBrowser.setGeometry(QtCore.QRect(40, 125, 240, 40))
+        self.password_criteria_textBrowser.setGeometry(QtCore.QRect(40, 155, 240, 40))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -197,7 +197,7 @@ class Ui_SignupWindow(object):
 
         # confirm_password_lineEdit
         self.confirm_password_lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.confirm_password_lineEdit.setGeometry(QtCore.QRect(40, 170, 200, 20))
+        self.confirm_password_lineEdit.setGeometry(QtCore.QRect(40, 200, 200, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -229,7 +229,7 @@ class Ui_SignupWindow(object):
 
         # clear_confirm_password_pushButton
         self.clear_confirm_password_pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.clear_confirm_password_pushButton.setGeometry(QtCore.QRect(240, 170, 40, 20))
+        self.clear_confirm_password_pushButton.setGeometry(QtCore.QRect(240, 200, 40, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -245,7 +245,7 @@ class Ui_SignupWindow(object):
         # password_DNM_textBrowser (DNM = Does Not Match)
         self.password_DNM_textBrowser = QtWidgets.QTextBrowser(parent=self.centralwidget)
         self.password_DNM_textBrowser.setEnabled(False)
-        self.password_DNM_textBrowser.setGeometry(QtCore.QRect(40, 120, 240, 25))
+        self.password_DNM_textBrowser.setGeometry(QtCore.QRect(40, 125, 240, 25))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)

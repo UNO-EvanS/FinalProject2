@@ -1,6 +1,5 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
-
 """
 Labels:
     - hello_user_label
@@ -27,7 +26,7 @@ Radio buttons:
     - withdraw_radioButton
     - transHist_radioButton
     - clearStorage_radioButton
-    
+
 Push buttons:
     - log_out_pushButton
     - confirm_pushButton
@@ -35,9 +34,9 @@ Push buttons:
     - cancel_logout_pushButton
 """
 
+
 class Ui_UserStorageWindow(object):
     def setupUi(self, UserStorageWindow):
-
         UserStorageWindow.setObjectName("UserStorageWindow")
         UserStorageWindow.resize(400, 500)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
@@ -87,7 +86,6 @@ class Ui_UserStorageWindow(object):
 
         # account_contents_textBrowser
         self.account_contents_textBrowser = QtWidgets.QTextBrowser(parent=self.centralwidget)
-        self.account_contents_textBrowser.setEnabled(False)
         self.account_contents_textBrowser.setGeometry(QtCore.QRect(100, 130, 200, 100))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -165,7 +163,6 @@ class Ui_UserStorageWindow(object):
 
         # item_lineEdit
         self.item_lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.item_lineEdit.setEnabled(False)
         self.item_lineEdit.setGeometry(QtCore.QRect(50, 250, 100, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -180,7 +177,6 @@ class Ui_UserStorageWindow(object):
 
         # quantity_lineEdit
         self.quantity_lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.quantity_lineEdit.setEnabled(False)
         self.quantity_lineEdit.setGeometry(QtCore.QRect(250, 250, 100, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -210,7 +206,6 @@ class Ui_UserStorageWindow(object):
 
         # alert_textBrowser
         self.alert_textBrowser = QtWidgets.QTextBrowser(parent=self.centralwidget)
-        self.alert_textBrowser.setEnabled(False)
         self.alert_textBrowser.setGeometry(QtCore.QRect(50, 280, 300, 50))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -223,14 +218,12 @@ class Ui_UserStorageWindow(object):
 
         # transaction_history_textBrowser
         self.transaction_history_textBrowser = QtWidgets.QTextBrowser(parent=self.centralwidget)
-        self.transaction_history_textBrowser.setEnabled(False)
         self.transaction_history_textBrowser.setGeometry(QtCore.QRect(60, 350, 280, 100))
         self.transaction_history_textBrowser.setMinimumSize(QtCore.QSize(280, 100))
         self.transaction_history_textBrowser.setMaximumSize(QtCore.QSize(280, 100))
         self.transaction_history_textBrowser.setObjectName("transaction_history_textBrowser")
 
-
-       # item_history_label
+        # item_history_label
         self.item_history_label = QtWidgets.QLabel(parent=self.centralwidget)
         self.item_history_label.setEnabled(True)
         self.item_history_label.setGeometry(QtCore.QRect(160, 330, 30, 20))
@@ -284,7 +277,6 @@ class Ui_UserStorageWindow(object):
 
         # confirm_logout_pushButton
         self.confirm_logout_pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.confirm_logout_pushButton.setEnabled(False)
         self.confirm_logout_pushButton.setGeometry(QtCore.QRect(0, 15, 50, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -297,7 +289,6 @@ class Ui_UserStorageWindow(object):
 
         # cancel_logout_pushButton
         self.cancel_logout_pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.cancel_logout_pushButton.setEnabled(False)
         self.cancel_logout_pushButton.setGeometry(QtCore.QRect(0, 40, 40, 20))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -400,26 +391,9 @@ class Ui_UserStorageWindow(object):
         _translate = QtCore.QCoreApplication.translate
         UserStorageWindow.setWindowTitle(_translate("UserStorageWindow", "Your storage"))
 
-        self.hello_user_label.setText(_translate("UserStorageWindow", "Hello, "))
+        self.hello_user_label.setText(_translate("UserStorageWindow", ""))
 
         self.greeting_label.setText(_translate("UserStorageWindow", "What would you like to do today?"))
-
-        self.account_contents_textBrowser.setHtml(_translate("UserStorageWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:7.875pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;</body></html>"))
 
         self.item_label.setText(_translate("UserStorageWindow", "Item"))
 
@@ -431,19 +405,19 @@ class Ui_UserStorageWindow(object):
 
         self.confirm_pushButton.setText(_translate("UserStorageWindow", "Confirm"))
 
-        self.alert_textBrowser.setHtml(_translate("UserStorageWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:7.875pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#aa0000;\">Max item quantity reached. Please withdraw something or create an additional account.</span></p></body></html>"))
+        self.alert_textBrowser.setHtml(_translate("UserStorageWindow","<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                                  "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                  "p, li { white-space: pre-wrap; }\n"
+                                                  "</style></head><body style=\" font-family:\'Times New Roman\'; font-size:7.875pt; font-weight:400; font-style:normal;\">\n"
+                                                  "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt; color:#9c1c1c;\"></span></p></body></html>"))
 
-        self.transaction_history_textBrowser.setHtml(_translate("UserStorageWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:7.875pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Deposit             Item1        +25</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Withdrawal      Item2        -33</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Clear    All        -50</span></p></body></html>"))
+        self.transaction_history_textBrowser.setHtml(_translate("UserStorageWindow","<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                                                "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                                "p, li { white-space: pre-wrap; }\n"
+                                                                "</style></head><body style=\" font-family:\'Times New Roman\'; font-size:7.875pt; font-weight:400; font-style:normal;\">\n"
+                                                                "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\"></span></p>\n"
+                                                                "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\"></span></p>\n"
+                                                                "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\"></span></p></body></html>"))
 
         self.item_history_label.setText(_translate("UserStorageWindow", "Item"))
 
@@ -465,6 +439,7 @@ class Ui_UserStorageWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     UserStorageWindow = QtWidgets.QMainWindow()
     ui = Ui_UserStorageWindow()

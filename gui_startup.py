@@ -8,7 +8,6 @@ This screen will also appear when a user logs out of their account.
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtCore import Qt
 
-
 class Ui_StartWindow(object):
     def setupUi(self, StartWindow):
         # StartWindow

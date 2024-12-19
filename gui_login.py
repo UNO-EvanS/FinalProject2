@@ -10,6 +10,34 @@ This is the login page that can be accessed from the startup menu or via the 'lo
 Once the correct username and password are entered, the user is prompted with the two-factor authentication question they set up.
 
 The user can also go to the 'create an account' menu from this page.
+
+GUI elements:
+* labels
+    - login_label
+    - loginTFA_label
+
+* push buttons
+    - username_clear_pushButton
+    - password_clear_pushButton
+    - continue_pushButton
+
+    - loginTF_confirm_pushButton
+
+    - create_account_pushbutton
+
+* text browsers
+    - username_alert_textBrowser
+    - password_alert_textBrowser
+
+    - userChosen_question_textBrowser
+    - incorrect_answer_textBrowser
+
+    - create_account_textBrowser
+
+* line edits
+    - username_lineEdit
+    - password_lineEdit
+    - TFA_lineEdit
 """
 from PyQt6 import QtCore, QtGui, QtWidgets
 
@@ -211,7 +239,6 @@ class Ui_LoginWindow(object):
 
         # loginTFA_label
         self.loginTFA_label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.loginTFA_label.setEnabled(False)
         self.loginTFA_label.setGeometry(QtCore.QRect(40, 180, 220, 30))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Fixed, QtWidgets.QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
